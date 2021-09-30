@@ -46,46 +46,50 @@ footer{
   color: white;
 }
 
-.right_footer, .center_footer, .left_footer{
-
-}
-
-.right_footer, .center_footer{
+/* Sezione sinistra del footer */
+.left_footer, .center_footer{
   text-align: center;
 }
 
-.right_footer ul, .center_footer ul{
+.left_footer ul, .center_footer ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 
-.center_footer ul li i{
-  display: block;
-}
-
-.right_footer ul li, .center_footer ul li{
+.left_footer ul li, .center_footer ul li{
   display: inline-block;
   padding: 10px;
   list-style: none;
 }
 
-.right_footer ul li:nth-child(odd) i{
+.left_footer ul li:nth-child(odd) i{
   display: block;
   font-size: 30px;
 }
 
-.right_footer ul li:nth-child(even) i{
+#arrow i {
   display: block;
+  font-size: 15px;
 }
 
+/* Sezione centrale del footer */
 .center_footer{
-  background-color: teal;
   min-width: 40%;
 }
 
-.left_footer{
-  background-color: blueviolet;
+.center_footer ul li i{
+  display: block;
+  font-size: 30px;
 }
 
+.right_footer{
+  background-color: #4B4A4C;
+  height: 100%;
+}
+.right_footer > p{
+  padding: 10px;
+  line-height: 5;
+  color: red;
+}
