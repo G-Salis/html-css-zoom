@@ -10,3 +10,82 @@
   display: table;
   clear: both;
 }
+
+
+/* HEADER */
+header{
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+
+.setting_screen, .fullscreen{
+  background-color: grey;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  height: 28%;
+  cursor: pointer;
+
+}
+
+main{
+  height: calc( 100vh - 200px);
+}
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #232123;
+  color: white;
+}
+
+.right_footer, .center_footer, .left_footer{
+
+}
+
+.right_footer, .center_footer{
+  text-align: center;
+}
+
+.right_footer ul, .center_footer ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.center_footer ul li i{
+  display: block;
+}
+
+.right_footer ul li, .center_footer ul li{
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
+}
+
+.right_footer ul li:nth-child(odd) i{
+  display: block;
+  font-size: 30px;
+}
+
+.right_footer ul li:nth-child(even) i{
+  display: block;
+}
+
+.center_footer{
+  background-color: teal;
+  min-width: 40%;
+}
+
+.left_footer{
+  background-color: blueviolet;
+}
+
