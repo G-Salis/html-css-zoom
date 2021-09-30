@@ -32,8 +32,41 @@ header{
 
 }
 
+/* MAIN */
 main{
   height: calc( 100vh - 200px);
+  background-color: black;
+  overflow: auto;
+}
+
+/* contenitore delle cam */
+.cell_cam{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+/* Caratteristica delle cam */
+.cam{
+  position: relative;
+  display: inline-block;
+  padding: 5px 0px;
+}
+
+/* Nome della persona in cam */
+.name_cam{
+  position: absolute;
+  bottom: 10px;
+  left:0;
+  color: white;
+  background-color: rgba(41, 37, 38, 0.5);
+  padding: 3px;
+}
+
+.cam img{
+  width: 150px;
+  height: 130px;
 }
 
 /* Footer */
@@ -64,9 +97,10 @@ footer{
   list-style: none;
 }
 
-.left_footer ul li:nth-child(odd) i{
+.left_footer ul li:nth-child(odd) i, .center_footer ul li i{
   display: block;
   font-size: 30px;
+  padding: 5px;
 }
 
 #arrow i {
@@ -79,11 +113,11 @@ footer{
   min-width: 40%;
 }
 
-.center_footer ul li i{
-  display: block;
-  font-size: 30px;
+.center_footer ul li:nth-child(4){
+  color: rgb(33, 201, 0);
 }
 
+/* Sezione destra del Footer */
 .right_footer{
   background-color: #4B4A4C;
   height: 100%;
